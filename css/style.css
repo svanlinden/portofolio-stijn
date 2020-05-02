@@ -17,9 +17,10 @@ body {
     background: linear-gradient(to right bottom,
     #23272d 60%, white 40%);
     color: white;
+}
+main{
     overflow: hidden;
 }
-
 
 /*Navigation*/
 
