@@ -153,7 +153,7 @@ nav{
     justify-content: flex-start;
 }
     #logo img {
-        width: 60%;
+        width: 70%;
 
     }
     a{
@@ -168,7 +168,7 @@ nav{
     }
 
     .burger span {
-        padding: 0.2rem 2rem;
+        padding: 0.1rem 2rem;
         background: white;
         margin: 0.5rem 0rem;
         display: block;
@@ -177,7 +177,7 @@ nav{
 
     .nav-links a {
         color: white;
-        font-size: calc(3rem + 1vw);
+        font-size: calc(2.5rem + 1vw);
         text-decoration: underline;
     }
 
@@ -213,7 +213,7 @@ nav{
     }
 
     .menu-check:checked ~ .burger span:nth-child(1) {
-        transform: rotateZ(45deg) translateY(330%);
+        transform: rotateZ(45deg) translateY(500%);
     }
 
     .menu-check:checked ~ .burger span:nth-child(2) {
@@ -221,7 +221,7 @@ nav{
     }
 
     .menu-check:checked ~ .burger span:nth-child(3) {
-        transform: rotateZ(-45deg) translateY(-320%);
+        transform: rotateZ(-45deg) translateY(-500%);
     }
 
 
