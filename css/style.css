@@ -95,7 +95,7 @@ nav a:hover {
     align-items: center;
     padding: 20rem 0rem;
     animation: movefromLeft 2s;
-    z-index: -1;
+
 }
 
 .hero-text h1 {
@@ -103,7 +103,8 @@ nav a:hover {
     padding: 1rem 0rem;
     font-family: "Roboto Mono", monospace;
     font-weight: 200;
-    position: relative;;
+    position: relative;
+    z-index: -1;
 }
 
 .hero-text p {
