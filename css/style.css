@@ -32,7 +32,6 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     padding-top: 2rem;
-
 }
 
 ul {
@@ -85,7 +84,6 @@ nav a:hover {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .hero-text {
@@ -95,7 +93,6 @@ nav a:hover {
     align-items: center;
     padding: 20rem 0rem;
     animation: movefromLeft 2s;
-
 }
 
 .hero-text h1 {
