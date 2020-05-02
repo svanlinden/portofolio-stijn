@@ -1,4 +1,4 @@
-/* Global Styles */
+/*Global Styles*/
 
 *,
 *::before,
@@ -17,10 +17,11 @@ body {
     background: linear-gradient(to right bottom,
     #23272d 60%, white 40%);
     color: white;
+    overflow: hidden;
 }
 
 
-/* Navigation */
+/*Navigation*/
 
 nav {
     min-height: 10vh;
@@ -75,7 +76,7 @@ nav a:hover {
 }
 
 
-/* Hero Section */
+/*Hero Section*/
 
 .hero {
     min-height: 90vh;
@@ -92,8 +93,7 @@ nav a:hover {
     flex-wrap: wrap;
     align-items: center;
     padding: 20rem 0rem;
-    animation: fadeIn 2s;
-
+    animation: movefromLeft 2s;
 }
 
 .hero-text h1 {
@@ -101,7 +101,7 @@ nav a:hover {
     padding: 1rem 0rem;
     font-family: "Roboto Mono", monospace;
     font-weight: 200;
-
+    position: relative;;
 }
 
 .hero-text p {
@@ -109,6 +109,25 @@ nav a:hover {
     color: #a8a8a8;
     padding: 3rem 0rem;
     font-family: "Muli", sans-serif;
+}
+.typing::after {
+    content: "";
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 5px;
+    width: 1px;
+    height: calc(2.5rem + 1vw);
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .hero-text button {
@@ -130,7 +149,7 @@ button:hover {
 .hero-image {
     flex: 1 1 40rem;
     display: flex;
-    animation: fadeIn 2s;
+    animation: movefromRight 2s;
 }
 
 .hero-image img {
@@ -139,7 +158,7 @@ button:hover {
     border-radius: 1rem;
 }
 
-/* Animations */
+/*Animations*/
 
 
 @keyframes mymoveTop {
@@ -160,16 +179,34 @@ button:hover {
     }
 }
 
-/* Media Queries */
+@keyframes movefromRight {
+    from{
+        transform: translateX(150%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes movefromLeft {
+    from{
+        transform: translateX(-150%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+
+/*Media Queries*/
 
 @media screen and (max-width: 1119px) {
-    /* Global Styles */
+    /*Global Styles*/
     body {
         background: linear-gradient(to right bottom,
         #23272d 70%, white 40%);
     }
 
-    /* Navigation*/
+    /*Navigation*/
     nav {
         justify-content: center;
     }
@@ -189,7 +226,7 @@ button:hover {
         width: 80%;
     }
 
-    /* Hero Section*/
+    /*Hero Section*/
     .hero-text {
         padding: 5rem 0rem;
     }
@@ -206,7 +243,7 @@ button:hover {
         background: #23272d;
     }
 
-    /* Navigation */
+    /*Navigation*/
     nav {
         width: 100%;
 
@@ -225,7 +262,7 @@ button:hover {
         font-size: calc(1rem + 1vw);
     }
 
-    /* Burger*/
+    /*Burger*/
     .burger {
         right: 5%;
         position: relative;
@@ -292,7 +329,7 @@ button:hover {
     }
 
 
-    /* Hero Section*/
+    /*Hero Section*/
     .hero-text p {
         font-size: 2rem;
     }
